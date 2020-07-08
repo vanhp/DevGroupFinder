@@ -35,15 +35,15 @@
                         app:layout_constraintDimensionRatio="4:3"/>
 
                 <TextView
-                    android:textAppearance="?textAppearanceHeadline5"
-
                     android:id="@+id/title"
+
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-
                     android:text="@string/about_google_developer_groups"
-
+                    android:textAllCaps="true"
+                    android:textAppearance="?textAppearanceHeadline5"
+                    android:textColor="@color/secondaryDarkColor"
                     app:layout_constraintEnd_toStartOf="@+id/end_grid"
                     app:layout_constraintStart_toStartOf="@+id/start_grid"
                     app:layout_constraintTop_toBottomOf="@id/image" />
@@ -54,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/gdg_description_long"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/primaryDarkColor"
                     android:textSize="14sp"
                     android:textStyle="italic"
                     app:layout_constraintEnd_toStartOf="@+id/end_grid"
@@ -62,13 +62,14 @@
                     app:layout_constraintTop_toBottomOf="@id/title" />
 
                 <TextView
-                    android:textAppearance="?textAppearanceHeadline6"
-
                     android:id="@+id/subtitle"
+
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="13dp"
                     android:text="@string/gdgs_are"
+                    android:textAppearance="@style/CustomHeadline7"
+                    android:textColor="@color/secondaryColor"
                     app:layout_constraintEnd_toStartOf="@id/end_grid"
                     app:layout_constraintStart_toEndOf="@id/start_grid"
                     app:layout_constraintTop_toBottomOf="@+id/intro_text" />

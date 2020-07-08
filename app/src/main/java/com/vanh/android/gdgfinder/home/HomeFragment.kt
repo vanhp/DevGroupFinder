@@ -12,6 +12,7 @@ import androidx.navigation.findNavController
 import com.vanh.android.gdgfinder.R
 import com.vanh.android.gdgfinder.databinding.HomeFragmentBinding
 
+
 class HomeFragment : Fragment() {
 
     companion object {
