@@ -10,8 +10,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 
 import com.vanh.android.gdgfinder.R
-import com.vanh.android.gdgfinder.databinding.AddGdgFragmentBinding
+
 import com.google.android.material.snackbar.Snackbar
+import com.vanh.android.gdgfinder.databinding.AddGdgFragmentBinding
 
 class AddGdgFragment : Fragment() {
 
@@ -36,6 +37,8 @@ class AddGdgFragment : Fragment() {
                     Snackbar.LENGTH_SHORT // How long to display the message.
                 ).show()
                 viewModel.doneShowingSnackbar()
+                binding.button.contentDescription=getString(R.string.submitted)
+                binding.button.text = getString(R.string.done)
             }
         })
 
