@@ -1,4 +1,4 @@
-package com.example.android.gdgfinder
+package com.vanh.android.gdgfinder
 
 import org.junit.Test
 

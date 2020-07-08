@@ -1,10 +1,10 @@
-package com.example.android.gdgfinder.search
+package com.vanh.android.gdgfinder.search
 
 import android.location.Location
-import com.example.android.gdgfinder.network.GdgApiService
-import com.example.android.gdgfinder.network.GdgChapter
-import com.example.android.gdgfinder.network.GdgResponse
-import com.example.android.gdgfinder.network.LatLong
+import com.vanh.android.gdgfinder.network.GdgApiService
+import com.vanh.android.gdgfinder.network.GdgChapter
+import com.vanh.android.gdgfinder.network.GdgResponse
+import com.vanh.android.gdgfinder.network.LatLong
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async

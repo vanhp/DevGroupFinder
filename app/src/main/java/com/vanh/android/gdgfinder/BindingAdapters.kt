@@ -1,10 +1,10 @@
-package com.example.android.gdgfinder
+package com.vanh.android.gdgfinder
 
 import android.view.View
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.android.gdgfinder.network.GdgChapter
-import com.example.android.gdgfinder.search.GdgListAdapter
+import com.vanh.android.gdgfinder.network.GdgChapter
+import com.vanh.android.gdgfinder.search.GdgListAdapter
 
 /**
  * When there is no Mars property data (data is null), hide the [RecyclerView], otherwise show it.

@@ -1,9 +1,9 @@
-package com.example.android.gdgfinder.search
+package com.vanh.android.gdgfinder.search
 
 import android.location.Location
 import androidx.lifecycle.*
-import com.example.android.gdgfinder.network.GdgApi
-import com.example.android.gdgfinder.network.GdgChapter
+import com.vanh.android.gdgfinder.network.GdgApi
+import com.vanh.android.gdgfinder.network.GdgChapter
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

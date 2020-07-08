@@ -1,4 +1,4 @@
-package com.example.android.gdgfinder.add
+package com.vanh.android.gdgfinder.add
 
 
 import android.os.Bundle
@@ -9,8 +9,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 
-import com.example.android.gdgfinder.R
-import com.example.android.gdgfinder.databinding.AddGdgFragmentBinding
+import com.vanh.android.gdgfinder.R
+import com.vanh.android.gdgfinder.databinding.AddGdgFragmentBinding
 import com.google.android.material.snackbar.Snackbar
 
 class AddGdgFragment : Fragment() {
@@ -28,7 +28,7 @@ class AddGdgFragment : Fragment() {
 
         binding.viewModel = viewModel
 
-        viewModel.showSnackBarEvent.observe(this, Observer {
+        viewModel.showSnackBarEvent.observe(viewLifecycleOwner, Observer {
             if (it == true) { // Observed state is true.
                 Snackbar.make(
                     activity!!.findViewById(android.R.id.content),

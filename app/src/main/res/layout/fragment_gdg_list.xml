@@ -7,13 +7,13 @@
 
         <variable
                 name="viewModel"
-                type="com.example.android.gdgfinder.search.GdgListViewModel" />
+                type="com.vanh.android.gdgfinder.search.GdgListViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context="com.example.android.gdg.MainActivity">
+            tools:context="com.vanh.android.gdg.MainActivity">
 
         <HorizontalScrollView
                 android:id="@+id/chips"

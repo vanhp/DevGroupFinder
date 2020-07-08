@@ -1,4 +1,4 @@
-package com.example.android.gdgfinder.home
+package com.vanh.android.gdgfinder.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.LiveData
