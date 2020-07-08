@@ -38,4 +38,5 @@
     <string name="submitted">Submitted, no need to submit again</string>
     <string name="done">Done</string>
     <string name="submit">Submit</string>
+    <string name="find_google_user_group">find google user group</string>
 </resources>

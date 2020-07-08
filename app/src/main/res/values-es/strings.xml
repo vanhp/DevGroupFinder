@@ -31,4 +31,6 @@
     <string name="submitted">Enviado, no hay necesidad de enviar de nuevo.</string>
     <string name="done">Hecho</string>
     <string name="submit">Enviar</string>
+    <string name="find_google_user_group">encontrar grupo de usuarios de google</string>
+
 </resources>
