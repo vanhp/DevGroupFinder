@@ -19,16 +19,13 @@ class GdgListViewModel: ViewModel() {
     private var currentJob: Job? = null
 
     private val _gdgList = MutableLiveData<List<GdgChapter>>()
-    private val _regionList = MutableLiveData<List<String>>()
-    private val _showNeedLocation = MutableLiveData<Boolean>()
-
     // The external LiveData interface to the property is immutable, so only this class can modify
     val gdgList: LiveData< List<GdgChapter>>
         get() = _gdgList
-
+    private val _regionList = MutableLiveData<List<String>>()
     val regionList: LiveData<List<String>>
         get() = _regionList
-
+    private val _showNeedLocation = MutableLiveData<Boolean>()
     val showNeedLocation: LiveData<Boolean>
         get() = _showNeedLocation
 
@@ -50,13 +47,9 @@ class GdgListViewModel: ViewModel() {
                 _gdgList.value = repository.getChaptersForFilter(filter.currentValue)
                 repository.getFilters().let {
                     // only update the filters list if it's changed since the last time
-                    if (it != _regionList.value) {
-                        _regionList.value = it
-                    }
+                    if (it != _regionList.value) _regionList.value = it
                 }
-            } catch (e: IOException) {
-                _gdgList.value = listOf()
-            }
+            } catch (e: IOException) { _gdgList.value = listOf() }
         }
     }
 
